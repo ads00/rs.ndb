@@ -5,8 +5,8 @@ authors = ["ads00"]
 edition = "2018"
 
 [dependencies]
-ndb = { path = "../lib" }
-ndb_macro  = { path = "../macro" }
+ndb = { path = "../ndb" }
+macro  = { path = "../macro" }
 
 
 [[bin]]

@@ -10,16 +10,20 @@ struct Struct
 }
 
 #[zetatest]
-struct Struct2
-{
-    zeta:i64,
-}
+struct Struct2;
+
+
 
 
 
 fn main()
 {
-    print!("EXP MAIN{}", answer2());
+    //use std::vec;
+    print!("EXP MAIN{}", ndb::test2());
+
+    let a : Vec<usize> =  Vec::new();
+
+
 
     ndb::test();
 

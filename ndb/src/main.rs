@@ -1,7 +1,9 @@
 #![feature(custom_attribute)]
 
 
-pub use ndb_macro::*;
+
+
+use r#macro::{storable, zetatest};
 
     pub fn test()
     {
