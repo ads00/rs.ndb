@@ -1,10 +1,7 @@
 #![feature(custom_attribute)]
 
-extern crate ndb_macro;
-use ndb_macro::storable;
-use ndb_macro::zetatest;
 
-
+use ndb;
 
 #[concept(storable copyable)]
 struct Struct
@@ -20,6 +17,11 @@ struct Struct2
 
 
 
-fn main() {
-    print!("{}", answer2());
+fn main()
+{
+    print!("EXP MAIN{}", answer2());
+
+    ndb::test();
+
+    ndb::query();
 }

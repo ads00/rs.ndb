@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 ndb_macro  = { path = "../macro" }
+sqlite = "0.24.0"
 
 [lib]
 path = "src/main.rs"

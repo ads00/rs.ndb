@@ -1,8 +1,28 @@
 #![feature(custom_attribute)]
 
-extern crate ndb_macro;
-use ndb_macro::storable;
-use ndb_macro::zetatest;
+
+pub use ndb_macro::*;
+
+    pub fn test()
+    {
+        print!("test");
+    }
+
+    pub fn query()
+    {
+        let connection = sqlite::open("test.db").unwrap();
+
+        connection
+            .execute(
+                "
+                CREATE TABLE IF NOT EXISTS users (name TEXT, age INTEGER);
+                INSERT INTO users (name, age) VALUES ('Alice', 42);
+                INSERT INTO users (name, age) VALUES ('Bob', 69);
+                ",
+            )
+            .unwrap();
+    }
+
 
 
 
@@ -16,10 +36,4 @@ struct Struct
 struct Struct2
 {
     zeta:i64,
-}
-
-
-
-fn main() {
-    print!("{}", answer2());
 }

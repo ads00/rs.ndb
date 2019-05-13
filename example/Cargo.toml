@@ -1,5 +1,5 @@
 [package]
-name = "basic"
+name = "example"
 version = "0.1.0"
 authors = ["ads00"]
 edition = "2018"
@@ -9,3 +9,4 @@ edition = "2018"
 [[bin]]
 name = "basic"
 path = "basic.rs"
+
