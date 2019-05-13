@@ -1,0 +1,18 @@
+[package]
+name = "exp_main"
+version = "0.1.0"
+authors = ["ads00"]
+edition = "2018"
+
+[dependencies]
+ndb = { path = "../lib" }
+ndb_macro  = { path = "../macro" }
+
+
+[[bin]]
+name = "main"
+path = "main.rs"
+
+[[bin]]
+name = "query"
+path = "query.rs"

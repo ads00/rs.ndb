@@ -1,0 +1,12 @@
+[package]
+name = "ndb"
+version = "0.1.0"
+authors = ["ads00"]
+edition = "2018"
+
+[dependencies]
+ndb_macro  = { path = "../macro" }
+
+[lib]
+path = "src/main.rs"
+
