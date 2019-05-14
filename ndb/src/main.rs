@@ -3,7 +3,7 @@
 
 
 
-use r#macro::{storable, zetatest};
+use r#macro::{Storable, zetatest};
 
     pub fn test()
     {
